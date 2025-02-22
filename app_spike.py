@@ -70,6 +70,7 @@ with tabs[0]:
             <div class="team">{adversaire1}/{adversaire2}</div>
         </div>
         """, unsafe_allow_html=True)
+        st.text("précision du modèle à 78%")
 
 
 # Onglet Analyse d'un joueur
