@@ -154,7 +154,7 @@ with tabs[1]:
         top3_adversaires_perdu = loss_rates_adversaires.nlargest(3)
         
         with col3:
-            st.subheader("🏆 Mes bourreaux")
+            st.subheader("🪓 Mes bourreaux")
             st.text("(% de défaites contre)")
             for i, (name, value) in enumerate(top3_adversaires_perdu.items(), start=1):
                 total_matches = df_joueur[df_joueur["Adversaires"].str.contains(name, regex=False)].shape[0]
