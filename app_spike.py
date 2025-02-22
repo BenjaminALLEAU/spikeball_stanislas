@@ -9,8 +9,7 @@ locale.setlocale(locale.LC_ALL, 'fr_FR.UTF-8')
 st.set_page_config(layout="wide", page_title="Analyse Ligue Stanistas", page_icon="dart", initial_sidebar_state="auto")
 
 # Charger le fichier transformé
-df_expanded = pd.read_pickle("data_preprocess/df_resultat_expanded.pkl")
-
+df_expanded = pd.read_csv("data_preprocess/df_resultat_expanded.csv")
 # Convertir "Num Court" et "week" en types numériques
 df_expanded["Num Court"] = pd.to_numeric(df_expanded["Num Court"], errors='coerce')
 df_expanded["week"] = pd.to_numeric(df_expanded["week"], errors='coerce')

@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 import joblib
 
 
-df = pd.read_pickle("data_preprocess/df_resultat_expanded.pkl")
+df = pd.read_csv("data_preprocess/df_resultat_expanded.csv")
 # Sélection des colonnes pertinentes
 df = df[["Num Court", "Joueur", "Coéquipier", "Adversaires", "Résultat"]].copy()
 
