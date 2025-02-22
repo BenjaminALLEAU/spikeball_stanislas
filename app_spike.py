@@ -36,7 +36,7 @@ with tabs[0]:
         adversaire1 = st.selectbox("Sélectionner le premier joueur de l'équipe B", joueurs, key="adversaire1")
         adversaire2 = st.selectbox("Sélectionner le coéquipier de l'équipe B", joueurs, key="adversaire2")
 
-    if st.button("Prédire le résultat"):
+    if st.button("Prédire les % de victoire"):
         resultat, proba = predire_match(joueur1, coequipier, adversaire1, adversaire2)
         # Affichage du score sous forme graphique
         st.markdown(f"""
