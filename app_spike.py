@@ -70,6 +70,7 @@ with tabs[0]:
             <div class="team">{adversaire1}/{adversaire2}</div>
         </div>
         """, unsafe_allow_html=True)
+        st.success(resultat)
 
 
 # Onglet Analyse d'un joueur
