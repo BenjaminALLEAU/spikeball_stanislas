@@ -1,11 +1,11 @@
 import pandas as pd
 import streamlit as st
-import locale
+#import locale
 import matplotlib.pyplot as plt
 from function.function import *
 
 # Configuration de la locale pour utiliser les espaces comme séparateurs de milliers
-locale.setlocale(locale.LC_ALL, 'fr_FR.UTF-8')
+#locale.setlocale(locale.LC_ALL, 'fr_FR.UTF-8')
 st.set_page_config(layout="wide", page_title="Analyse Ligue Stanistas", page_icon="dart", initial_sidebar_state="auto")
 
 # Charger le fichier transformé
