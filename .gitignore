@@ -11,3 +11,4 @@ venv/
 # Pour éviter d'envoyer l'environnement virtuel
 .venv/
 env/
+data/
